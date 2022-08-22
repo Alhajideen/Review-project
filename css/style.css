@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    justify-content: right;
+    overflow-x: 0;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#welcome-section{
+    background-image: url(../microverse.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+}
+#welcome-section h1,#welcome-section p{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#projects{
+    background-color: aquamarine;
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(133, 127, 127);
+}
+
+
+.small{
+    
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+.imgs{
+    height: 250px;
+    width: 250px;
+}
+
+@media (maxwidth:1024px){
+    #welcome-section{
+        display: block;
+    }
+}
